@@ -14,6 +14,9 @@ Develop a Python program to derive the optimal policy using Q-Learning and compa
 → Compare Q-Learning policy and state values with Monte Carlo results for the given RL environment.
 
 ## Q LEARNING FUNCTION
+
+```
+
 Name: Chandrapriyadharshini C
 Register Number: 212223240019
 def q_learning(env,
@@ -50,6 +53,9 @@ def q_learning(env,
     pi = lambda s: {s:a for s, a in enumerate(np.argmax(Q, axis=1))}[s]
 
     return Q, V, pi, Q_track, pi_track
+
+```
+    
 ## OUTPUT:
 
 #### Optimal State Value Functions:
@@ -68,5 +74,6 @@ def q_learning(env,
 
 <img width="1678" height="754" alt="image" src="https://github.com/user-attachments/assets/3a84c33a-bbf1-41fd-8053-02e6fe02615b" />
 
-RESULT:
+## RESULT:
+
 Thus, Q-Learning outperformed Monte Carlo in finding the optimal policy and state values for the RL problem.
